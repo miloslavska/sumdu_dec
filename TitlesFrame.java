@@ -24,13 +24,9 @@ public class TitlesFrame extends JFrame
   
   public static void main(String[] args)
   {
-    javax.swing.SwingUtilities.invokeLater(new Runnable()
-    {
-      public void run()
-      {
+    javax.swing.SwingUtilities.invokeLater(() -> { // использован лямбда синтаксис
         TitlesFrame ps = new TitlesFrame();
         ps.setVisible(true);
-      }
     });
   }
 }

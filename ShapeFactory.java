@@ -39,8 +39,7 @@ public class ShapeFactory
       this.shape = new java.awt.geom.Arc2D.Double(-this.width / 2.0D, -this.height / 2.0D, this.width, this.height, 30.0D, 300.0D, 
         2);
       break;
-    case 2: case 4: case 6: 
-    case 8: default: 
+    default: // убраны ненужные кейсы
       throw new Error("type is nusupported");
     }
     switch (shape_type % 10) {
@@ -58,7 +57,7 @@ public class ShapeFactory
     case 8: 
       this.paint = java.awt.Color.red;
       break;
-    case 2: case 5: case 6: default: 
+    default: // убраны ненужные кейсы
       throw new Error("type is nusupported");
     }
   }
