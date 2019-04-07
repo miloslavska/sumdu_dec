@@ -9,7 +9,12 @@ public class ShapeFactory
   public int width = 25;
   public int height = 25;
   
-  public ShapeFactory(int shape_type) {
+    /**
+     * Создает фигуру
+     * 
+     * @param shape_type [0-9]{2} первая цифра отвечает за форму, вторая за цвет/заливку/толщину
+     */
+    public ShapeFactory(int shape_type) {
     this.stroke = new java.awt.BasicStroke(3.0F);
     switch (shape_type / 10) {
     case 1: 
@@ -58,6 +63,15 @@ public class ShapeFactory
     }
   }
   
+  /**
+   * Создает геометрическую фигуру в форме звезды
+   * 
+   * @param arms количество лучей
+   * @param center координаты центра
+   * @param rOuter внешний радиус
+   * @param rInner внутренний радиус
+   * @return 
+   */
   private static java.awt.Shape createStar(int arms, Point center, double rOuter, double rInner)
   {
     double angle = 3.141592653589793D / arms;

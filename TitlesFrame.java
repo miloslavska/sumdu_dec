@@ -2,11 +2,17 @@ import javax.swing.JFrame;
 
 public class TitlesFrame extends JFrame
 {
+  /**
+   * Конструктор класса
+   */
   public TitlesFrame()
   {
     initUI();
   }
   
+  /**
+   * Инициализирует графический интерфейс
+   */
   private void initUI()
   {
     setTitle("Кривые фигуры");

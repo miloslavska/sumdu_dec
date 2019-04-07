@@ -12,6 +12,9 @@ public class TitlesPanel extends javax.swing.JPanel implements java.awt.event.Ac
   private int start_angle = 0;
   private int shape;
   
+  /**
+   * Конструктор класса
+   */
   public TitlesPanel(int _shape) {
     this.is_done = true;
     this.shape = _shape;
@@ -28,6 +31,9 @@ public class TitlesPanel extends javax.swing.JPanel implements java.awt.event.Ac
     }
   }
   
+  /**
+   * Выполняет трансформацию графического объекта (вращение)
+   */
   private void doDrawing(Graphics g) {
     this.is_done = false;
     this.g2d = ((Graphics2D)g);
